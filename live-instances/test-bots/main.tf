@@ -1,5 +1,6 @@
 module "vultr-instances" {
-  source = "../vultr-instance"
+  source = "../../modules/vultr-instance"
+
   plan = "vc2-1c-1gb"
   region = "lhr"
   os_id = 477
@@ -10,7 +11,8 @@ module "vultr-instances" {
 }
 
 module "vultr-instances-2" {
-  source = "../vultr-instance"
+  source = "../../modules/vultr-instance"
+
   plan = "vc2-1c-1gb"
   region = "lhr"
   os_id = 477

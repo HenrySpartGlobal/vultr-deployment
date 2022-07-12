@@ -7,7 +7,6 @@ terraform {
   }
 }
 
-
 provider "vultr" {
   api_key = var.api_key
   retry_limit = 3

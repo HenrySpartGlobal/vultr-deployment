@@ -5,4 +5,10 @@ terraform {
     region  = "eu-west-2"
     profile = "default"
   }
+  required_providers {
+    vultr = {
+      source = "vultr/vultr"
+      version = "2.11.3"
+    }
+  }
 }
