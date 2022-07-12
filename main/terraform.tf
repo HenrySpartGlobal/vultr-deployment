@@ -9,12 +9,13 @@ terraform {
     bucket  = "henrykoleoso-tf-bucket"
     key     = "terraform-states/terraform.tfstate"
     region  = "eu-west-2"
+    profile = "default"
   }
 }
 
 provider "aws" {
   region  = "eu-west-2"
-  access_key = var.AWS_ACCESS_KEY_ID
-  secret_key = var.AWS_SECRET_ACCESS_KEY
+  access_key = var.access_key
+  secret_key = var.secret_key
   profile = "root"
 }
