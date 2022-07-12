@@ -6,4 +6,5 @@ resource "vultr_instance" "my_instance" {
   tags = var.tags
   hostname = var.hostname
   enable_ipv6 = true
+
 }
