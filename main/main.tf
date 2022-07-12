@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "hk-terraform-states" {
-  bucket = "hk-terraform-states"
+  bucket = "henrykoleoso-tf-bucket"
 }
 
 resource "aws_s3_bucket_acl" "hk-acl" {

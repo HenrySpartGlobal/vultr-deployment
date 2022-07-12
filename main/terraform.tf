@@ -5,6 +5,11 @@ terraform {
       version = "4.21.0"
     }
   }
+  backend "s3" {
+    bucket  = "henrykoleoso-tf-bucket"
+    key     = "terraform-states/terraform.tfstate"
+    region  = "eu-west-2"
+  }
 }
 
 provider "aws" {
