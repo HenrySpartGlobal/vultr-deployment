@@ -7,3 +7,8 @@ resource "vultr_instance" "my_instance" {
   hostname = var.hostname
   enable_ipv6 = true
 }
+
+resource "vultr_startup_script" "dl-dependencies" {
+  name = "start-up=script"
+  script = var.start_up_script
+}
