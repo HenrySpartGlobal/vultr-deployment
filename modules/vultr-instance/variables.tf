@@ -31,8 +31,3 @@ variable "hostname" {
   type = string
   description = "The actual name of the instance"
 }
-
-variable "start_up_script" {
-  type = string
-  description = "Base64 encoded string of the start up script"
-}
