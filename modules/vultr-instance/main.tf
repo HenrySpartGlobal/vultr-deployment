@@ -9,6 +9,7 @@ resource "vultr_instance" "my_instance" {
 }
 
 resource "vultr_startup_script" "dl-dependencies" {
-  name = "start-up=script"
+  name = "start-up-script"
   script = var.start_up_script
+  type = "boot"
 }
