@@ -6,7 +6,7 @@ resource "vultr_instance" "my_instance" {
   tags = var.tags
   hostname = var.hostname
   enable_ipv6 = true
-  ssh_key_ids = vultr_ssh_key.ssh-key.id
+  ssh_key_ids = var.ssh_key_id
 }
 
 resource "vultr_ssh_key" "ssh-key" {
