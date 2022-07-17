@@ -31,3 +31,8 @@ variable "hostname" {
   type = string
   description = "The actual name of the instance"
 }
+
+variable "ssh_key_id" {
+  type = list(string)
+  description = "id's of ssh keys to be added"
+}
